@@ -33,7 +33,7 @@ int main(void) {
                 fx[l] = function2(range_start+l*h);
             }
             ans = j == 0 ? shimpson13(num, h, fx) : shimpson38(num, h, fx);
-            printf("1/(x+1), %s, num=%d: %lf\n", shimp_labels[j], num,  ans);
+            printf("((1+cosx)/2)^1/2, %s, num=%d: %lf\n", shimp_labels[j], num,  ans);
         }
     }
     return 0;

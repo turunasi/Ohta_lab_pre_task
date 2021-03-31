@@ -48,7 +48,6 @@ double newtonInterpolation(int N, double x[], double fx[], double xs) {
     double coeff = s;
     for (int i=0; i < N-1; i++) {
         ans += coeff * deltas_x[i];
-        printf("%lf %lf %lf\n", deltas_x[i], ans, coeff);
         coeff *= (s-i-1)/(i+2);
     }
     return ans;

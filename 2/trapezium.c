@@ -19,9 +19,7 @@ int main(void) {
         for(int j=0; j <= num; j++) {
             x[j] = range_start + j*h;
             fx[j] = sin(x[j]);
-            printf("x:%lf, fx:%lf\n", x[j], fx[j]);
         }
-        printf("x[0] = %lf\n", x[0]);
         double ans = trapezium(num, h, fx);
         printf("n=%d: %lf\n", num,  ans);
     }

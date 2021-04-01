@@ -1,9 +1,9 @@
 # task 1
-## compile (task 1)
+## compile
 ```sh
 gcc trapezium.c -lm
 ```
-## output (task 1)
+## output
 ```sh
 turunasi@LAPTOP-EV69KIJ1:~/ohta_lab_pre_task/2$ ./a.out
 n=2: 0.948059

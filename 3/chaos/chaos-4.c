@@ -2,16 +2,16 @@
 #include <math.h>
 #include <stdlib.h>
 
-#define X_0 0.01
+#define X_0 0
 #define Y_0 0
-#define Z_0 0
+#define Z_0 0.5
 #define a_1 -1.164
 #define a_2 -0.827824
 #define a_3 -1.306011
 #define c_1 1.2482
 #define c_2 -8.532633
 #define c_3 16.98886
-#define h 0.002
+#define h 0.01
 #define LOOP_NUM 10000
 #define FILE_NAME "chaos-4.txt"
 

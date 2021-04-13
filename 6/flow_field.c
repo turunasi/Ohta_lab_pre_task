@@ -67,6 +67,16 @@ int main(void) {
         system(command);
     }
     
+    r = sqrt(pow((a-XI_0),2.0)+ETA_0*ETA_0);
+    for (int j = 0; j < DEVIDE_NUM; j++) {
+        theta = 2*M_PI/DEVIDE_NUM*j;
+        xi = XI_0 + r*cos(theta);
+        eta = ETA_0 + r*sin(theta);
+        x = xi*(1+a*a/(xi*xi+eta*eta));
+        y = eta*(1-a*a/(xi*xi+eta*eta));
+        sprintf(command, "echo '%lf %lf ' >> %s", x, y, FILE_NAME);
+        system(command);
+    }
     return 0;
 }
 
